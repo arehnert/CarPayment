@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class CarPayment {
 	
-	private static Scanner scanner;
-
 	public static double calculateCarPayment (int carCost, int loanAmt, int downPayment, int termYears, double interestRate) {
 			
 		
@@ -25,7 +23,7 @@ public class CarPayment {
 		
 	public static void main(String[] args) {
 		
-		scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Enter amount of loan: ");
 		int loanAmt = scanner.nextInt();
